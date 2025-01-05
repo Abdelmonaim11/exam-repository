@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="333.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examtest.controller.UpdatePatientController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfd6eb" height="242.0" layoutX="9.0" layoutY="37.0" opacity="0.12" stroke="BLACK" strokeType="INSIDE" width="578.0" />
+      <Label layoutX="14.0" layoutY="8.0" text="Update Patient" textFill="#073ced">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="52.0" text="ID Patient" textFill="#2012e0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idPatient" layoutX="86.0" layoutY="47.0" prefHeight="25.0" prefWidth="82.0" />
+      <Label layoutX="308.0" layoutY="101.0" text="Prenom" textFill="#2012e0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="prenomPatient" layoutX="377.0" layoutY="96.0" prefHeight="25.0" prefWidth="197.0" />
+      <Label layoutX="29.0" layoutY="101.0" text="Nom" textFill="#2012e0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nomPatient" layoutX="78.0" layoutY="96.0" prefHeight="25.0" prefWidth="197.0" />
+      <Label layoutX="32.0" layoutY="144.0" text="CIN" textFill="#2012e0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cinPatient" layoutX="78.0" layoutY="139.0" prefHeight="25.0" prefWidth="197.0" />
+      <Label layoutX="308.0" layoutY="144.0" text="Telephone" textFill="#2012e0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="telPatient" layoutX="377.0" layoutY="139.0" prefHeight="25.0" prefWidth="197.0" />
+      <Label layoutX="128.0" layoutY="188.0" text="Email" textFill="#2012e0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailPatient" layoutX="191.0" layoutY="183.0" prefHeight="25.0" prefWidth="279.0" />
+      <DatePicker fx:id="dateNaisPatien" layoutX="191.0" layoutY="232.0" prefHeight="25.0" prefWidth="279.0" />
+      <Label layoutX="69.0" layoutY="237.0" text="Date Naissance" textFill="#2012e0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="142.0" layoutY="292.0" mnemonicParsing="false" onAction="#updatePatient" text="Update" textFill="#1339e4">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="343.0" layoutY="292.0" mnemonicParsing="false" onAction="#cancelUpdatePatient" text="Cancel" textFill="#1339e4">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
