@@ -7,6 +7,7 @@ public class Client {
     private String nom, prenom,adresse, tel, email;
     private List<Commande> clientCommande;
 
+
     public int getId_client() {
         return id_client;
     }
